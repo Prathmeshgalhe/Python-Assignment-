@@ -1,0 +1,14 @@
+#Q1#
+print("\"Hi!\"")
+print()
+print("\"How are you?\"")
+#Q2#
+print("Person A:\"Why are you learning python?\"")
+print()
+print("Person B:\"it is need of time\"")
+print()
+print("Person A:\"That's true\"")
+#Q3#
+print("Welcome to the world of python programming")
+#Q4#
+print("Hello Prathmesh")
