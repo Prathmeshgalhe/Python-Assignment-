@@ -3,4 +3,21 @@ Q1)
 Q2)
 :print("Hello Prathmesh")
 Q3)
-:
+:print("Hi!")
+:print ("how are you?")
+Q4)
+:print("\t\ttable")
+
+for i in range(3):
+    print(f"\tcol{i+1}",end='')
+for i in range(2):
+    print(f"\nrow{i+1}")
+Q5)
+:print("Person A:\"Why are you learning python?\"")
+print("\"It is need of time\"")
+print("That\'s true")
+Q6)
+:print("n\nn")
+print("space\ttab")
+print("\'")
+print("\"")
