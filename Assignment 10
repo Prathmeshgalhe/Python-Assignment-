@@ -1,0 +1,95 @@
+#Arithmetic #
+while (True):
+ a=int(input("enter first number :"))
+ o=str(input("enter oprater :"))
+ b=int(input("enter second number :"))
+
+ match o:
+  case '+':
+   print(f"{a} {o} {b} = {a+b}")
+  case '-':
+   print(f"{a} {o} {b} = {a-b}")
+  case '/':
+   print(f"{a} {o} {b} = {a/b}")
+  case '*':
+   print(f"{a} {o} {b} = {a*b}")
+  case _:
+   print('please enter valid oprater ')
+ str = input("contnue or exit :")
+ if str == "exit":
+  break
+#Dicstionary op#
+dic={
+    input("enter a key:"):input('enter a value')
+}
+
+while True:
+    print(dic)
+    print("1.add a key value","2.find a value","3.get a key:",sep='\n')
+    match input('enter a number :'):
+        case "1":
+            d={input("enter a key:"):input('enter a value')}
+            dic.update(d)
+        case "2":
+            print(dic[input("enter a key:")])
+        case "3":
+            print(dic.keys())
+        case _:
+            print("enter a valid number ")
+#list operator#
+li=input("enter list elements").split(' ')
+print(li)
+while True:
+    print("1.add a element","2.remove a element","3.find length of list","4.sort elements",sep="\n")
+    match input("enter the number :"):
+        case "1":
+            li.append(input("add a element "))
+        case "2":
+            li.remove(int(input("enter the index :")))
+        case "3":
+            print(len(li))
+        case "4":
+            print(li.sort())
+        case _:
+            print('enter a valid oprater')
+#set op.#
+s=set(input("enter the elemetns : ").split(' '))
+while True:
+    print(s)
+    print("1.add","2.remove","3.clear",sep='\n')
+    match input('enter a number :'):
+        case "1":
+            s.add(input("enter the elemetns : "))
+        case "2":
+            s.remove(input("enter the elemet : "))
+        case "3":
+            s.clear()
+        case _:
+            print("enter a valid number ")
+#string operation #
+s=input("enter a string :")
+while(True):
+    print("1.add a string","2.find the length of string","3.get a sub-string","4.get deitis ","5.change the string",sep="\n")
+    match input("enter a number "):
+        case "1":
+            s+=input("add :")
+        case "2":
+            print(len(s))
+        case "3":
+            (a,b)=(int,input("enter indexs :").split(' '))
+            print(s[a:b])
+        case "4":
+            up,lp,nu=0,0,0
+            for i in s:
+                if i.isupper():
+                    up+=1
+                elif i.isdigit():
+                    nu+=1
+                elif i.islower():
+                    lp+=1
+            print("upper case -",up,"\nlower case -",lp,"\nnumber -",nu)
+        case "5":
+            s=input('enter a new string :')
+        case _:
+            print("enter a valid number")
+
